@@ -2,9 +2,9 @@ const express = require("express");
 // middleware to allow for routing on the node server
 const router = express.Router();
 // require firebase
-const firebase = require("firebase/firestore");
+const firestore = require("firebase/firestore");
 // initialize Firebase Database
-const db = firebase.getFirestore();
+const db = firestore.getFirestore();
 // get all articles from firebase
 router.get("/", (req, res) => {
     const blogposts = firestore.getDocs(
