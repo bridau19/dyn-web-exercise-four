@@ -1,4 +1,4 @@
-const express = required("express");
+const express = require("express");
 const app = express(); // initiate express
 
 const port = process.env.PORT || 4000; // setting port - dynamically with heroku
@@ -19,8 +19,6 @@ const firebaseConfig = {
 
 // initialize firebase
 firebase.initializeApp(firebaseConfig);
-
-
 
 // routes for directing user to correct place
 const indexRoute = require("./routes/index");
