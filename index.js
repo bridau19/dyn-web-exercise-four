@@ -28,7 +28,7 @@ const createArticleRoute = require("./routes/createArticle");
 // tell express to use routes
 app.use("/", indexRoute);
 app.use("/article", articleRoute);
-app.use("/createArticle", createArticleRoute);
+app.use("/create", createArticleRoute);
 
 // listen to requests on server
 app.listen(port, () => {
